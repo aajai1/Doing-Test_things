@@ -1,11 +1,7 @@
 package com.test;
 
-import javax.lang.model.element.Element;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.utils.DriverKit;
