@@ -14,5 +14,6 @@ public class HiddenElement {
 		driver.get("https://testautomationpractice.blogspot.com/p/gui-elements-ajax-hidden.html");
 		FindElement.IdLocate(driver, "toggleInput").click();
 		FindElement.IdLocate(driver, "input2").sendKeys("hey",Keys.ENTER);
+		driver.quit();
 	}
 }

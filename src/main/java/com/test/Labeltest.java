@@ -19,6 +19,7 @@ public class Labeltest {
 			System.out.println("Label is Prest");
 			
 		}else System.out.println("No Lbel");
+		driver.quit();
 	}
 
 }

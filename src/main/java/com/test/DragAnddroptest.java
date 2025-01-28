@@ -19,6 +19,7 @@ public class DragAnddroptest {
 		WebElement target = FindElement.IdLocate(driver, "droppable");
 		Actions action = new Actions(driver);
 		action.dragAndDrop(source, target).perform();
+		driver.quit();
 		
 	}
 

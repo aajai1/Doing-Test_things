@@ -20,6 +20,7 @@ public class Slider {
 		//action.clickAndHold();
 		//action.dragAndDropBy(slider1, 100, 0).perform();
 		//System.out.println(slider1.)
+		driver.quit();
 		
 	}
 

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 25 21:57:06 IST 2025</td>
+<td>Started on:</td><td>Tue Jan 28 11:14:08 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>118 seconds (118837 ms)</td>
+<tr><td>Total time:</td><td>55 seconds (55256 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,284 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.test.DatePick.datePick2()'><b>datePick2</b><br>Test class: com.test.DatePick</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [754ef6734766ea46e9510fb617d7f548, findElement [using, value]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59060/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 754ef6734766ea46e9510fb617d7f548
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.test.DatePick.datePick2(DatePick.java:70)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:497)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:384)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	... 3 more
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:966)
-	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:456)
-	... 8 more
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:388)
-	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	... 3 more
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
-	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1469)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1414)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1414)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1697854979", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1697854979'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [754ef6734766ea46e9510fb617d7f548, findElement [using, value]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59060/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 754ef6734766ea46e9510fb617d7f548
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.test.DatePick.datePick2(DatePick.java:70)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:497)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:384)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	... 3 more
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:966)
-	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:456)
-	... 8 more
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-	at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:388)
-	at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	... 3 more
-Caused by: java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
-	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1469)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1414)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1414)
-</pre></div></td>
-<td>51</td>
-<td>com.test.DatePick@4470f8a6</td></tr>
-<tr>
-<td title='com.test.FileUpload.fileUpload()'><b>fileUpload</b><br>Test class: com.test.FileUpload</td>
-<td><div><pre>org.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=132.0.6834.84)
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b275fadc5c4ca04ea46ca8332c355500, clickElement {id=f.22278BC28A3082B355705E592B95A57F.d.387153FCDFE12A72429FBD446ADBEC8F.e.72}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58845}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58845/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b275fadc5c4ca04ea46ca8332c355500)] -&gt; id: multipleFilesInput]
-Session ID: b275fadc5c4ca04ea46ca8332c355500
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at com.test.FileUpload.fileUpload(FileUpload.java:25)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1472882350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1472882350'><pre>org.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=132.0.6834.84)
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b275fadc5c4ca04ea46ca8332c355500, clickElement {id=f.22278BC28A3082B355705E592B95A57F.d.387153FCDFE12A72429FBD446ADBEC8F.e.72}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58845}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58845/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b275fadc5c4ca04ea46ca8332c355500)] -&gt; id: multipleFilesInput]
-Session ID: b275fadc5c4ca04ea46ca8332c355500
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at com.test.FileUpload.fileUpload(FileUpload.java:25)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>3</td>
-<td>com.test.FileUpload@3f56875e</td></tr>
-<tr>
-<td title='com.test.DatePickByIco.datePickByIcon()'><b>datePickByIcon</b><br>Test class: com.test.DatePickByIco</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=132.0.6834.84)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c4187989fe53f24f060231da7027f4fc, findElement {using=css selector, value=document.querySelector(&quot;#startdate&quot;)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58987/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c4187989fe53f24f060231da7027f4fc
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.test.DatePickByIco.datePickByIcon(DatePickByIco.java:17)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1865265207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1865265207'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=132.0.6834.84)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c4187989fe53f24f060231da7027f4fc, findElement {using=css selector, value=document.querySelector(&quot;#startdate&quot;)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.84, chrome: {chromedriverVersion: 132.0.6834.110 (df453a35f09..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58987/devtoo..., se:cdpVersion: 132.0.6834.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c4187989fe53f24f060231da7027f4fc
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.test.DatePickByIco.datePickByIcon(DatePickByIco.java:17)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>4</td>
-<td>com.test.DatePickByIco@3e96bacf</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -354,50 +76,110 @@ Session ID: c4187989fe53f24f060231da7027f4fc
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.test.DoubleClickTest.doubleClick()'><b>doubleClick</b><br>Test class: com.test.DoubleClickTest</td>
+<td></td>
+<td>9</td>
+<td>com.test.DoubleClickTest@206a70ef</td></tr>
+<tr>
+<td title='com.test.HandleLinks.newTabTest()'><b>newTabTest</b><br>Test class: com.test.HandleLinks</td>
+<td></td>
+<td>23</td>
+<td>com.test.HandleLinks@6a6cb05c</td></tr>
+<tr>
+<td title='com.test.Alerts.ConfirmationOkay.ConfirmAlertDismiss()'><b>ConfirmAlertDismiss</b><br>Test class: com.test.Alerts.ConfirmationOkay</td>
+<td></td>
+<td>9</td>
+<td>com.test.Alerts.ConfirmationOkay@36ebc363</td></tr>
+<tr>
+<td title='com.test.scrollTypes.PixelScroll.pixelScroll()'><b>pixelScroll</b><br>Test class: com.test.scrollTypes.PixelScroll</td>
+<td></td>
+<td>10</td>
+<td>com.test.scrollTypes.PixelScroll@40a4337a</td></tr>
+<tr>
 <td title='com.test.HoverExample.hoverMouse()'><b>hoverMouse</b><br>Test class: com.test.HoverExample</td>
 <td></td>
-<td>7</td>
-<td>com.test.HoverExample@7c83dc97</td></tr>
+<td>9</td>
+<td>com.test.HoverExample@38425407</td></tr>
+<tr>
+<td title='com.test.Alerts.SimpleAlertOkay.ConfirmAlertOkay()'><b>ConfirmAlertOkay</b><br>Test class: com.test.Alerts.SimpleAlertOkay</td>
+<td></td>
+<td>8</td>
+<td>com.test.Alerts.SimpleAlertOkay@6c6cb480</td></tr>
+<tr>
+<td title='com.test.DetailsFill.fillTest()'><b>fillTest</b><br>Test class: com.test.DetailsFill</td>
+<td></td>
+<td>14</td>
+<td>com.test.DetailsFill@5bf0d49</td></tr>
 <tr>
 <td title='com.test.Labeltest.labeltest()'><b>labeltest</b><br>Test class: com.test.Labeltest</td>
 <td></td>
-<td>4</td>
-<td>com.test.Labeltest@3571b748</td></tr>
+<td>12</td>
+<td>com.test.Labeltest@45752059</td></tr>
+<tr>
+<td title='com.test.Slider.slidertest()'><b>slidertest</b><br>Test class: com.test.Slider</td>
+<td></td>
+<td>11</td>
+<td>com.test.Slider@54d9d12d</td></tr>
+<tr>
+<td title='com.test.FileUpload.fileUpload()'><b>fileUpload</b><br>Test class: com.test.FileUpload</td>
+<td></td>
+<td>11</td>
+<td>com.test.FileUpload@22555ebf</td></tr>
+<tr>
+<td title='com.test.NewTabTest.newTabTest()'><b>newTabTest</b><br>Test class: com.test.NewTabTest</td>
+<td></td>
+<td>13</td>
+<td>com.test.NewTabTest@43bc63a3</td></tr>
+<tr>
+<td title='com.test.DatePick.datePick2()'><b>datePick2</b><br>Test class: com.test.DatePick</td>
+<td></td>
+<td>14</td>
+<td>com.test.DatePick@3c41ed1d</td></tr>
+<tr>
+<td title='com.test.Alerts.PromptAlertExample.promptAlertOkay()'><b>promptAlertOkay</b><br>Test class: com.test.Alerts.PromptAlertExample</td>
+<td></td>
+<td>6</td>
+<td>com.test.Alerts.PromptAlertExample@c730b35</td></tr>
+<tr>
+<td title='com.test.NewTabTest.newWindowTest()'><b>newWindowTest</b><br>Test class: com.test.NewTabTest</td>
+<td></td>
+<td>10</td>
+<td>com.test.NewTabTest@43bc63a3</td></tr>
+<tr>
+<td title='com.test.DatePickByIco.datePickByIcon()'><b>datePickByIcon</b><br>Test class: com.test.DatePickByIco</td>
+<td></td>
+<td>13</td>
+<td>com.test.DatePickByIco@34e9fd99</td></tr>
+<tr>
+<td title='com.test.Alerts.PromptAlertExample.promptAlertDismiss()'><b>promptAlertDismiss</b><br>Test class: com.test.Alerts.PromptAlertExample</td>
+<td></td>
+<td>10</td>
+<td>com.test.Alerts.PromptAlertExample@c730b35</td></tr>
+<tr>
+<td title='com.test.HiddenElement.hiddenElement()'><b>hiddenElement</b><br>Test class: com.test.HiddenElement</td>
+<td></td>
+<td>6</td>
+<td>com.test.HiddenElement@3c46e67a</td></tr>
+<tr>
+<td title='com.test.Alerts.SimpleAlertOkay.SimpleAlert()'><b>SimpleAlert</b><br>Test class: com.test.Alerts.SimpleAlertOkay</td>
+<td></td>
+<td>6</td>
+<td>com.test.Alerts.SimpleAlertOkay@6c6cb480</td></tr>
 <tr>
 <td title='com.test.DragAnddroptest.fileUpload()'><b>fileUpload</b><br>Test class: com.test.DragAnddroptest</td>
 <td></td>
 <td>6</td>
-<td>com.test.DragAnddroptest@76ed1b7c</td></tr>
+<td>com.test.DragAnddroptest@292b08d6</td></tr>
 <tr>
-<td title='com.test.HandleLinks.newTabTest()'><b>newTabTest</b><br>Test class: com.test.HandleLinks</td>
+<td title='com.test.StaticTable.staticTable()'><b>staticTable</b><br>Test class: com.test.StaticTable</td>
 <td></td>
-<td>6</td>
-<td>com.test.HandleLinks@740773a3</td></tr>
+<td>12</td>
+<td>com.test.StaticTable@702657cc</td></tr>
 <tr>
-<td title='com.test.NewTabTest.newWindowTest()'><b>newWindowTest</b><br>Test class: com.test.NewTabTest</td>
+<td title='com.test.Alerts.ConfirmationOkay.ConfirmAlertOkay()'><b>ConfirmAlertOkay</b><br>Test class: com.test.Alerts.ConfirmationOkay</td>
 <td></td>
-<td>11</td>
-<td>com.test.NewTabTest@7748410a</td></tr>
-<tr>
-<td title='com.test.DetailsFill.fillTest()'><b>fillTest</b><br>Test class: com.test.DetailsFill</td>
-<td></td>
-<td>7</td>
-<td>com.test.DetailsFill@2b4bac49</td></tr>
-<tr>
-<td title='com.test.NewTabTest.newTabTest()'><b>newTabTest</b><br>Test class: com.test.NewTabTest</td>
-<td></td>
-<td>6</td>
-<td>com.test.NewTabTest@7748410a</td></tr>
-<tr>
-<td title='com.test.HiddenElement.hiddenElement()'><b>hiddenElement</b><br>Test class: com.test.HiddenElement</td>
-<td></td>
-<td>3</td>
-<td>com.test.HiddenElement@fd07cbb</td></tr>
-<tr>
-<td title='com.test.DoubleClickTest.doubleClick()'><b>doubleClick</b><br>Test class: com.test.DoubleClickTest</td>
-<td></td>
-<td>4</td>
-<td>com.test.DoubleClickTest@484970b0</td></tr>
+<td>9</td>
+<td>com.test.Alerts.ConfirmationOkay@36ebc363</td></tr>
 </table><p>
 </body>
 </html>

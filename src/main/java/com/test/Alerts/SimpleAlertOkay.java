@@ -17,6 +17,7 @@ public class SimpleAlertOkay {
 		WebElement simppleAlert=  FindElement.IdLocate(driver, "alertBtn");
 		simppleAlert.click();
 		driver.switchTo().alert().accept();
+		driver.quit();
 		
 	}
 	
@@ -27,6 +28,7 @@ public class SimpleAlertOkay {
 		WebElement simppleAlert=  FindElement.IdLocate(driver, "confirmBtn");
 		simppleAlert.click();
 		driver.switchTo().alert().accept();
+		driver.quit();
 		
 	}
 	

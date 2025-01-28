@@ -24,6 +24,7 @@ public class StaticTable {
 		for(WebElement header : tableHEad) {
 			
 			List<WebElement> value = header.findElements(By.tagName("tr"));
+			driver.quit();
 			
 		}
 	}

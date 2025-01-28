@@ -23,6 +23,7 @@ public class PixelScroll {
 		Actions action = new Actions(driver);
 		
 		action.scrollToElement(element).perform();
+		driver.quit();
 		
 		
 		 

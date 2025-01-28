@@ -18,6 +18,7 @@ public class HoverExample {
 		Actions action = new Actions(driver);
 		action.moveToElement(hoverEle).perform();
 		FindElement.XpathLocate(driver, "//*[@id=\"HTML3\"]/div[1]/div/div/a[1]").click();
+		driver.quit();
 		
 		
 	}

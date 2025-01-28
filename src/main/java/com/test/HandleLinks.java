@@ -18,5 +18,6 @@ public class HandleLinks {
 		System.out.println(driver.getCurrentUrl());
 		driver.navigate().back();
 		System.out.println(driver.getCurrentUrl());
+		driver.quit();
 }
 }

@@ -20,6 +20,7 @@ public class ConfirmationOkay {
 		simppleAlert.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.switchTo().alert().accept();;
+		driver.quit();
 		
 	}
 	
@@ -31,6 +32,6 @@ public class ConfirmationOkay {
 		simppleAlert.click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.switchTo().alert().dismiss();
-		
+		driver.quit();
 	}
 }

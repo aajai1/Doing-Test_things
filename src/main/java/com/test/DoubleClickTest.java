@@ -18,5 +18,6 @@ public class DoubleClickTest {
 		WebElement doubleClick= FindElement.XpathLocate(driver, "//*[@id=\"HTML10\"]/div[1]/button");
 		Actions action = new Actions(driver);
 		action.doubleClick(doubleClick).perform();
+		driver.quit();
 	}
 }

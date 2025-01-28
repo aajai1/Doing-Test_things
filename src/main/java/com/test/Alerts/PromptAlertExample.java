@@ -19,6 +19,7 @@ public class PromptAlertExample {
 		Alert promptAlert = driver.switchTo().alert();
 		promptAlert.sendKeys("New ME");
 		promptAlert.accept();
+		driver.quit();
 
 
 
@@ -33,5 +34,6 @@ public class PromptAlertExample {
 		Alert promptAlert = driver.switchTo().alert();
 		promptAlert.sendKeys("New ME");
 		promptAlert.dismiss();
+		driver.quit();
 	}
 }

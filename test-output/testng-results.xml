@@ -1,23 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-25T22:24:58 IST" name="Default suite" finished-at="2025-01-25T22:25:07 IST" duration-ms="8955">
+  <suite started-at="2025-01-28T11:14:08 IST" name="Suite" finished-at="2025-01-28T11:15:04 IST" duration-ms="55256">
     <groups>
     </groups>
-    <test started-at="2025-01-25T22:24:58 IST" name="Default test" finished-at="2025-01-25T22:25:07 IST" duration-ms="8955">
-      <class name="com.test.DatePick">
-        <test-method signature="datePick2()[pri:0, instance:com.test.DatePick@d21a74c]" started-at="2025-01-25T22:24:59 IST" name="datePick2" finished-at="2025-01-25T22:25:03 IST" duration-ms="4460" status="PASS">
+    <test started-at="2025-01-28T11:14:08 IST" name="Test" finished-at="2025-01-28T11:15:04 IST" duration-ms="55256">
+      <class name="com.test.Alerts.ConfirmationOkay">
+        <test-method signature="ConfirmAlertDismiss()[pri:0, instance:com.test.Alerts.ConfirmationOkay@36ebc363]" started-at="2025-01-28T11:14:21 IST" name="ConfirmAlertDismiss" finished-at="2025-01-28T11:14:31 IST" duration-ms="9711" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datePick2 -->
-      </class> <!-- com.test.DatePick -->
+        </test-method> <!-- ConfirmAlertDismiss -->
+        <test-method signature="ConfirmAlertOkay()[pri:0, instance:com.test.Alerts.ConfirmationOkay@36ebc363]" started-at="2025-01-28T11:14:31 IST" name="ConfirmAlertOkay" finished-at="2025-01-28T11:14:40 IST" duration-ms="9003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfirmAlertOkay -->
+      </class> <!-- com.test.Alerts.ConfirmationOkay -->
+      <class name="com.test.Labeltest">
+        <test-method signature="labeltest()[pri:0, instance:com.test.Labeltest@45752059]" started-at="2025-01-28T11:14:23 IST" name="labeltest" finished-at="2025-01-28T11:14:35 IST" duration-ms="12009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- labeltest -->
+      </class> <!-- com.test.Labeltest -->
       <class name="com.test.DatePickByIco">
-        <test-method signature="datePickByIcon()[pri:0, instance:com.test.DatePickByIco@313b2ea6]" started-at="2025-01-25T22:25:03 IST" name="datePickByIcon" finished-at="2025-01-25T22:25:07 IST" duration-ms="4455" status="PASS">
+        <test-method signature="datePickByIcon()[pri:0, instance:com.test.DatePickByIco@34e9fd99]" started-at="2025-01-28T11:14:24 IST" name="datePickByIcon" finished-at="2025-01-28T11:14:38 IST" duration-ms="13577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- datePickByIcon -->
       </class> <!-- com.test.DatePickByIco -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.test.DragAnddroptest">
+        <test-method signature="fileUpload()[pri:0, instance:com.test.DragAnddroptest@292b08d6]" started-at="2025-01-28T11:14:15 IST" name="fileUpload" finished-at="2025-01-28T11:14:21 IST" duration-ms="6036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUpload -->
+      </class> <!-- com.test.DragAnddroptest -->
+      <class name="com.test.NewTabTest">
+        <test-method signature="newTabTest()[pri:0, instance:com.test.NewTabTest@43bc63a3]" started-at="2025-01-28T11:14:38 IST" name="newTabTest" finished-at="2025-01-28T11:14:51 IST" duration-ms="13748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTabTest -->
+        <test-method signature="newWindowTest()[pri:0, instance:com.test.NewTabTest@43bc63a3]" started-at="2025-01-28T11:14:51 IST" name="newWindowTest" finished-at="2025-01-28T11:15:02 IST" duration-ms="10962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newWindowTest -->
+      </class> <!-- com.test.NewTabTest -->
+      <class name="com.test.HoverExample">
+        <test-method signature="hoverMouse()[pri:0, instance:com.test.HoverExample@38425407]" started-at="2025-01-28T11:14:35 IST" name="hoverMouse" finished-at="2025-01-28T11:14:45 IST" duration-ms="9872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverMouse -->
+      </class> <!-- com.test.HoverExample -->
+      <class name="com.test.Slider">
+        <test-method signature="slidertest()[pri:0, instance:com.test.Slider@54d9d12d]" started-at="2025-01-28T11:14:29 IST" name="slidertest" finished-at="2025-01-28T11:14:41 IST" duration-ms="11322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- slidertest -->
+      </class> <!-- com.test.Slider -->
+      <class name="com.test.scrollTypes.PixelScroll">
+        <test-method signature="pixelScroll()[pri:0, instance:com.test.scrollTypes.PixelScroll@40a4337a]" started-at="2025-01-28T11:14:41 IST" name="pixelScroll" finished-at="2025-01-28T11:14:51 IST" duration-ms="10137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pixelScroll -->
+      </class> <!-- com.test.scrollTypes.PixelScroll -->
+      <class name="com.test.HandleLinks">
+        <test-method signature="newTabTest()[pri:0, instance:com.test.HandleLinks@6a6cb05c]" started-at="2025-01-28T11:14:41 IST" name="newTabTest" finished-at="2025-01-28T11:15:04 IST" duration-ms="23140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTabTest -->
+      </class> <!-- com.test.HandleLinks -->
+      <class name="com.test.StaticTable">
+        <test-method signature="staticTable()[pri:0, instance:com.test.StaticTable@702657cc]" started-at="2025-01-28T11:14:40 IST" name="staticTable" finished-at="2025-01-28T11:14:53 IST" duration-ms="12607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staticTable -->
+      </class> <!-- com.test.StaticTable -->
+      <class name="com.test.DatePick">
+        <test-method signature="datePick2()[pri:0, instance:com.test.DatePick@3c41ed1d]" started-at="2025-01-28T11:14:26 IST" name="datePick2" finished-at="2025-01-28T11:14:41 IST" duration-ms="14899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datePick2 -->
+      </class> <!-- com.test.DatePick -->
+      <class name="com.test.DoubleClickTest">
+        <test-method signature="doubleClick()[pri:0, instance:com.test.DoubleClickTest@206a70ef]" started-at="2025-01-28T11:14:08 IST" name="doubleClick" finished-at="2025-01-28T11:14:18 IST" duration-ms="9076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doubleClick -->
+      </class> <!-- com.test.DoubleClickTest -->
+      <class name="com.test.HiddenElement">
+        <test-method signature="hiddenElement()[pri:0, instance:com.test.HiddenElement@3c46e67a]" started-at="2025-01-28T11:14:08 IST" name="hiddenElement" finished-at="2025-01-28T11:14:15 IST" duration-ms="6639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hiddenElement -->
+      </class> <!-- com.test.HiddenElement -->
+      <class name="com.test.Alerts.PromptAlertExample">
+        <test-method signature="promptAlertDismiss()[pri:0, instance:com.test.Alerts.PromptAlertExample@c730b35]" started-at="2025-01-28T11:14:08 IST" name="promptAlertDismiss" finished-at="2025-01-28T11:14:19 IST" duration-ms="10836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- promptAlertDismiss -->
+        <test-method signature="promptAlertOkay()[pri:0, instance:com.test.Alerts.PromptAlertExample@c730b35]" started-at="2025-01-28T11:14:19 IST" name="promptAlertOkay" finished-at="2025-01-28T11:14:26 IST" duration-ms="6333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- promptAlertOkay -->
+      </class> <!-- com.test.Alerts.PromptAlertExample -->
+      <class name="com.test.DetailsFill">
+        <test-method signature="fillTest()[pri:0, instance:com.test.DetailsFill@5bf0d49]" started-at="2025-01-28T11:14:08 IST" name="fillTest" finished-at="2025-01-28T11:14:23 IST" duration-ms="14513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillTest -->
+      </class> <!-- com.test.DetailsFill -->
+      <class name="com.test.Alerts.SimpleAlertOkay">
+        <test-method signature="ConfirmAlertOkay()[pri:0, instance:com.test.Alerts.SimpleAlertOkay@6c6cb480]" started-at="2025-01-28T11:14:08 IST" name="ConfirmAlertOkay" finished-at="2025-01-28T11:14:17 IST" duration-ms="8743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfirmAlertOkay -->
+        <test-method signature="SimpleAlert()[pri:0, instance:com.test.Alerts.SimpleAlertOkay@6c6cb480]" started-at="2025-01-28T11:14:17 IST" name="SimpleAlert" finished-at="2025-01-28T11:14:24 IST" duration-ms="6673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SimpleAlert -->
+      </class> <!-- com.test.Alerts.SimpleAlertOkay -->
+      <class name="com.test.FileUpload">
+        <test-method signature="fileUpload()[pri:0, instance:com.test.FileUpload@22555ebf]" started-at="2025-01-28T11:14:18 IST" name="fileUpload" finished-at="2025-01-28T11:14:29 IST" duration-ms="11910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUpload -->
+      </class> <!-- com.test.FileUpload -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" parallel="classes" name="Suite">
-  <test parallel="classes" name="Test">
+<suite parallel="classes" name="Suite">
+  <test thread-count="5" parallel="classes" name="Test">
     <classes>
+      <class name="com.test.DetailsFill"/>
+      <class name="com.test.Alerts.SimpleAlertOkay"/>
+      <class name="com.test.HiddenElement"/>
+      <class name="com.test.Alerts.PromptAlertExample"/>
+      <class name="com.test.DoubleClickTest"/>
       <class name="com.test.DragAnddroptest"/>
       <class name="com.test.FileUpload"/>
-      <class name="com.test.DetailsFill"/>
-      <class name="com.test.HiddenElement"/>
+      <class name="com.test.Alerts.ConfirmationOkay"/>
       <class name="com.test.Labeltest"/>
       <class name="com.test.DatePickByIco"/>
-      <class name="com.test.DoubleClickTest"/>
       <class name="com.test.DatePick"/>
+      <class name="com.test.Slider"/>
       <class name="com.test.HoverExample"/>
       <class name="com.test.NewTabTest"/>
+      <class name="com.test.StaticTable"/>
       <class name="com.test.HandleLinks"/>
+      <class name="com.test.scrollTypes.PixelScroll"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
